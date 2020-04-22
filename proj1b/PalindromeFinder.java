@@ -15,22 +15,21 @@ public class PalindromeFinder {
                 // what N are there the most palindromes in English?
                 // What is the longest offByN palindrome for any N?
                 if (palindrome.isPalindrome(word, offByi)) {
-                    if(longestWords[i] == null){
+                    if (longestWords[i] == null) {
                         longestWords[i] = word;
-                    }
-                    else if(word.length() > longestWords[i].length()){
+                    } else if (word.length() > longestWords[i].length()) {
                         longestWords[i] = word;
                     }
                     nums[i]++;
                 }
             }
         }
-        for(int i: nums){
+        for (int i: nums) {
             System.out.print(i);
             System.out.print(' ');
         }
         System.out.println();
-        for(String i: longestWords){
+        for (String i: longestWords) {
             System.out.print(i + ' ');
         }
     }
