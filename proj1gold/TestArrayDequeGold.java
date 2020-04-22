@@ -16,7 +16,9 @@ public class TestArrayDequeGold {
             sad.addFirst(random);
             ans.addFirst(random);
             assertEquals("\naddFirst(" + random + ")\n", ans.get(i), sad.get(i));
+            System.out.println("addFirst("+random+")");
         }
+
 
         for (int i = 0; i < 10; i++) {
             // addLast
@@ -24,16 +26,22 @@ public class TestArrayDequeGold {
             sad.addLast(random);
             ans.addLast(random);
             assertEquals("\naddLast(" + random + ")\n", ans.get(1), sad.get(1));
+            System.out.println("addLast("+random+")");
         }
+
 
         for (int i = 0; i < 10; i++) {
             // removeFirst
             assertEquals("\nremoveFirst()\n", ans.removeFirst(), sad.removeFirst());
+            System.out.println("removeFirst()");
         }
+
 
         for (int i = 0; i < 10; i++) {
             // removeLast
             assertEquals("\nremoveLast()\n", ans.removeLast(), sad.removeLast());
+            System.out.println("removeLast()");
         }
+
     }
 }
